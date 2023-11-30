@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+
+}
+#header{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav > li > a{
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    position: relative;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav li:hover,
+#nav > li:hover > a{
+    background-color: #ccc;
+    display: block;
+}
+
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav a{
+    color: black;
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+#header .search-btn{
+    color: #fff;
+    font-size: 20px;
+    float: right;
+    line-height: 46px;
+    padding: 0 24px;
+    cursor: pointer;
+}
+
+#header .search-btn:hover{
+    background-color: #f44336;
+}
+
+
+
+#silder{
+    margin-top: 46px;
+    padding-top: 50%;
+    background-image:url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fbazaarvietnam.vn%2Faespa-dien-good-morning-america-trong-chuyen-luu-dien-synk-hyper-line%2F&psig=AOvVaw09deSU6olH3UWmXOrEBb2H&ust=1699180421266000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLC46r2SqoIDFQAAAAAdAAAAABAJ') top center / cover no-repeat;
+}
+#content{
+
+}
+#footer{
+
+}
