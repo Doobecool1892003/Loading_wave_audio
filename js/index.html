@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="main5.js">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <p id="demo"></p>
+    <h2 id="demo"></h2>
     <script>
-        let x = 0.2 + 0.1;
-        document.getElementById('demo').innerHTML = x;
+        async function myDisplay() {
+            let myPromise = new Promise(function(resolve) {
+                setTimeout(function(){resolve("I love you 3000");}, 3000)
+            });
+            document.getElementById('demo').innerHTML = await myPromise;
+        }
+        myDisplay();
     </script>
 </body>
 </html>

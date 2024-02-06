@@ -1,0 +1,337 @@
+@import url("https://use.fontawesome.com/releases/v6.5.1/css/all.css");
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: #002b36;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.xmas-tree {
+    position: relative;
+    width: 500px;
+    height: 590px;
+    z-index: -2;
+}
+
+.star {
+    z-index: 3;
+    position: absolute;
+    color: #fffc00;
+    font-size: 40px;
+    text-shadow: 0 0 20px #fffc00;
+    left: 50%;
+    top: 15%;
+    margin-left: -22px;
+    animation: spin 2s infinite linear forwards;
+}
+
+@keyframes spin {
+    to {
+        transform:rotate(1turn);;
+    }
+}
+
+.t1 {
+    position: absolute;
+    z-index: 2;
+    border-bottom: 100px solid #2bd937;
+    margin-left: -100px;
+    border-left: 100px solid transparent;
+    border-right:100px solid transparent;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    top: 20%;
+    left: 50%;
+}
+
+.t2 {
+    position: absolute;
+    z-index: 1;
+    border-bottom: 125px solid #26bd30;
+    margin-left: -125px;
+    border-left: 125px solid transparent;
+    border-right:125px solid transparent;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    top: 27%;
+    left: 50%;
+}
+
+.t3 {
+    position: absolute;
+    z-index: 0;
+    border-bottom: 150px solid #1f9927;
+    margin-left: -150px;
+    border-left: 150px solid transparent;
+    border-right:150px solid transparent;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    top: 34%;
+    left: 50%;
+}
+
+.t4 {
+    position: absolute;
+    z-index: -1;
+    border-bottom: 175px solid #12871a;
+    margin-left: -175px;
+    border-left: 175px solid transparent;
+    border-right:175px solid transparent;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    top: 41%;
+    left: 50%;
+}
+
+.t1::before,
+.t1::after{
+    position: absolute;
+    content: "";
+    background: #d6d400;
+    z-index: 3;
+    width: 10px;
+    height: 20px;
+    border-radius: 50%;
+    animation: blink 1s infinite;
+}
+.t2::before,
+.t2::after{
+    position: absolute;
+    content: "";
+    background: #d6d400;
+    z-index: 3;
+    width: 10px;
+    height: 20px;
+    border-radius: 50%;
+    animation: blinkb 1.5s infinite;
+}
+
+.t3::before,
+.t3::after {
+    position: absolute;
+    content: "";
+    background: #d6d400;
+    z-index: 3;
+    width: 10px;
+    height: 20px;
+    border-radius: 50%;
+    animation: blinkc 1.7s infinite;
+}
+.t4::before,
+.t4::after{
+    position: absolute;
+    content: "";
+    background: #d6d400;
+    z-index: 3;
+    width: 10px;
+    height: 20px;
+    border-radius: 50%;
+    animation: blinka 1.6s infinite;
+}
+
+.t2::before {
+    animation-delay: 1.5s;
+}
+
+.t3::before {
+    animation-delay: 1s;
+}
+
+.t4::before {
+    animation-delay: 0.5s;
+}
+
+@keyframes blinka{
+    30% {
+        background: rgb(241, 73, 17);
+        box-shadow: 0 0 20px 10px #fffc0059;
+    }
+    60% {
+        background: rgb(241, 73, 17);
+        box-shadow: 0 0 20px 10px #fffc0059;
+
+    }
+}
+
+@keyframes blinkb{
+    30% {
+        background: rgb(83, 20, 194);
+        box-shadow: 0 0 20px 10px #fffc0059;
+    }
+    60% {
+        background: rgb(83, 20, 194);
+        box-shadow: 0 0 20px 10px #fffc0059;
+
+    }
+}
+
+@keyframes blinkc{
+    30% {
+        background: rgb(136, 9, 102);
+        box-shadow: 0 0 20px 10px #fffc0059;
+    }
+    60% {
+        background: rgb(83, 20, 194);
+        box-shadow: 0 0 20px 10px #fffc0059;
+
+    }
+}
+
+@keyframes blink {
+    30% {
+        background: rgb(255, 252, 0);
+        box-shadow: 0 0 20px 10px #fffc0059;
+    }
+    60% {
+        background: #d6d400;
+        box-shadow: 0 0 20px 10px #fffc0059;
+
+    }
+}
+
+.t1::before {
+    top: 77px;
+    left: -82px;
+}
+
+.t1::after {
+    top: 77px;
+    right: -82px;
+}
+
+.t2::before {
+    top: 98px;
+    left: -103px;
+}
+
+.t2::after {
+    top: 98px;
+    right: -103px;
+}
+
+.t3::before {
+    top: 118px;
+    left: -112px;
+}
+
+.t3::after {
+    top: 118px;
+    right: -112px;
+}
+
+.t4::before {
+    top: 139px;
+    left: -133px;
+}
+
+.t4::after{
+    top: 139px;
+    right: -133px;
+}
+
+.stem {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 100px;
+    z-index: -7;
+    background: #573004;
+}
+
+.snow-ground {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    background: whitesmoke;
+    top: 75%;
+    left: 50%;
+    margin-left: -60px;
+    z-index: -5;
+    border-radius: 50%;
+}
+
+.snow {
+    position: absolute;
+    top: -10px;
+    background: lightblue;
+    border-radius: 50%;
+    animation: fall linear;
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fffc00;
+    border-radius: 50%;
+    animation: blinked 1s infinite;
+    z-index: 4;
+}
+
+.t1 .ball {
+    top: -15px;
+    left: 50%;
+    margin-left: -15px;
+}
+
+.t2 .ball {
+    top: -15px;
+    left: 50%;
+    margin-left: -15px;
+}
+
+.t3 .ball {
+    top: -15px;
+    left: 50%;
+    margin-left: -15px;
+}
+
+.t4 .ball {
+    top: -15px;
+    left: 50%;
+    margin-left: -15px;
+}
+
+.blinked {
+    position: absolute;
+    content: "";
+    background: #fffc00;
+    z-index: 5;
+    width: 10px;
+    height: 20px;
+    border-radius: 50%;
+    animation: blinked;
+}
+
+.t1 .blink {
+    top: 77px;
+    left: -82px;
+}
+
+.t2 .blink {
+    top: 98px;
+    left: -103px;
+}
+
+.t3 .blink {
+    top: 118px;
+    left: -112px;
+}
+
+.t4 .blink {
+    top: 139px;
+    left: -133px;
+}
+
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
+

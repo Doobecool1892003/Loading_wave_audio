@@ -1,0 +1,200 @@
+@import url("https://use.fontawesome.com/releases/v6.5.1/css/all.css");
+:root {
+    --shadow: 10px 10px 20px 0px #1f470082;
+    --ball-size: 40px;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background: #002b36;
+}
+
+.xmas,
+.tree {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.star {
+    color: #fffc00;
+    font-size: 40px;
+    text-shadow: 0 0 20px #fffc00;
+    margin-left: 0px;
+    animation: spin 2s infinite linear forwards;
+}
+
+@keyframes spin {
+    to {
+        transform:rotate(1turn);;
+    }
+}
+
+
+.tree>div {
+    box-shadow: var(--shadow);
+}
+
+.tree-1 {
+    border-radius: 50px 50px 0 0  ;
+    width: 60px;
+    height: 50px;
+    background: #46cd56;
+}
+
+.tree-2 {
+    border-radius: 30px 30px 0 0  ;
+    width: 120px;
+    height: 50px;
+    background: #31d434;
+}
+
+.tree-3 {
+    border-radius: 20px 20px 0 0  ;
+    width: 180px;
+    height: 50px;
+    background: #43bb30;
+}
+
+.tree-4 {
+    border-radius: 20px 20px 0 0  ;
+    width: 240px;
+    height: 50px;
+    background: #4dc140;
+}
+
+.tree-5 {
+    border-radius: 30px 30px 0 0  ;
+    width: 300px;
+    height: 50px;
+    background: #43a334;
+}
+
+.tree-6 {
+    width: 360px;
+    height: 50px;
+    background: #1bae31;
+    border-radius: 25px 25px 0 0  ;
+}
+
+.tree-7 {
+    width: 420px;
+    height: 50px;
+    border-radius: 15px 15px 0 0  ;
+    background: #20942a;
+}
+
+.tree-8 {
+    width: 480px;
+    height: 50px;
+    border-radius: 10px 10px 20px 20px;
+    background: #188627;
+}
+
+.trunk {
+    width: 50px;
+    height: 50px;
+    background-color: #9e6328;
+    box-shadow: var(--shadow);
+}
+
+.ball>div {
+    position: absolute;
+    width: var(--ball-size);
+    height: var(--ball-size);
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+}
+
+.ball-1 {
+    background: #e388b1;
+    left: 250px;
+    top: 80px;
+}
+
+.ball-1 {
+    background: #e388b1;
+    left: 250px;
+    animation: blink 1s infinite;
+    top: 80px;
+}
+.ball-2 {
+    background: #f4d348;
+    animation: blink 1.1s infinite;
+    left: 170px;
+    top: 120px;
+}
+.ball-3 {
+    background: #e388b1;
+    left: 250px;
+    animation: blink 1.2s infinite;
+    top: 80px;
+}
+.ball-4 {
+    background: #bb3e39;
+    left: 144px;
+    animation: blink 1.3s infinite;
+    top: 238px;
+}
+.ball-5 {
+    background: #e388b1;
+    left: 320px;
+    animation: blink 1.4s infinite;
+    top: 238px;
+}
+.ball-6 {
+    background: #e74521;
+    left: 256px;
+    animation: blink 1.5s infinite;
+    top: 280px;
+}
+.ball-7 {
+    background: #3512e5;
+    left: 123px;
+    animation: blink 1.6s infinite;
+    top: 297px;
+}
+.ball-8 {
+    background: #15d607;
+    left: 293px;
+    animation: blink 1.6s infinite;
+    top: 368px;
+}
+
+@keyframes blink {
+    30% {
+        background: rgb(255, 252, 0);
+        box-shadow: 0 0 20px 10px #fffc0059;
+    }
+    60% {
+        background: #d6d400;
+        box-shadow: 0 0 20px 10px #fffc0059;
+    }
+}
+
+.ground {
+    width: 120px;
+    height: 20px;
+    background: rgb(245, 242, 242);
+    border-radius: 40%;
+    box-shadow: var(--shadow);
+}
+
+.snow {
+    position: absolute;
+    top: -10px;
+    background: lightblue;
+    border-radius: 50%;
+    animation: fall linear;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
+
